@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title">Course Survey Form</h1>
+        <p id="description">Thanks for helping us to improve our platform</p>
+    </div>
+    <div class="content">
+
+
+        <form id="survey-form" action="mailto:gpssrlcom2005@gmail.com" method="post" enctype="text/plain">
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Name" required></label>
+
+            <label for="Email" id="email-label">Email <input type="email" id="email" placeholder="Email"
+                    required></label>
+
+            <label for="number" id="number-label">Age(optional) <input type="number" id="number" placeholder="Age"
+                    required min="13" max="66"></label>
+
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown">
+                    <option>select any one</option>
+                    <option>Student</option>
+                    <option>Full time learner</option>
+                    <option>Full time job</option>
+                    <option>Part time job</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                Would you recommend this platform for your friend?
+                <label><input type="radio" value="recommendation" name="suggestion">Defenitely</label>
+                <label><input type="radio" value="recommendation" name="suggestion">Maybe</label>
+                <label><input type="radio" value="recommendation" name="suggestion">Not sure</label>
+            </label><br>
+
+            <label for="dropdown1">What's your favourite part of this course?
+                <select id="dropdown1">
+                    <option>Select any one</option>
+                    <option>Projects</option>
+                    <option>Quizzes</option>
+                    <option>Coding games</option>
+                    <option>Other</option>
+                </select>
+            </label>
+            <br>
+            <div class="chklst2">
+                <h4 style="font-weight: normal;" id="topic2">What are the courses that need improvement?</h4>
+                <div class="chcekbxopt">
+                    <label for="wd"><input type="checkbox" id="wd" name="course" value="wd">Web Development</label>
+                    <label><input type="checkbox">Basics of Programming</label>
+                    <label><input type="checkbox">Advanced Programming</label>
+                    <label><input type="checkbox">Data Science</label>
+                    <label><input type="checkbox">Cloud Computing</label>
+                </div>
+                <br>
+            </div>
+
+            <div class="txtbx">
+                <label for="text">Any Comments<textarea placeholder="Type something"></textarea></label>
+            </div>
+            <span><input type="submit" value="SUBMIT" id="submit-btn"></span>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
